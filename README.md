@@ -10,7 +10,7 @@ The WebSocket server for the browser extension that gets the anime information a
 ![Imgur](https://i.imgur.com/9qeSwwo.png)
 
 ## Installation
-1. Download and install the latest version of the browser extension (only Firefox is supported at the moment).
+1. Download and install the latest version of the browser extension [here](https://addons.mozilla.org/en-US/firefox/addon/ka-discord-rich-presence/) (only Firefox is supported at the moment).
 
 2. Download and install the latest release of the WebSocket server [here](https://github.com/AnjoEscuro/KissAnime-Discord-Rich-Presence/releases).
 

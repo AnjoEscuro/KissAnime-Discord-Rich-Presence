@@ -10,14 +10,25 @@ The WebSocket server for the browser extension that gets the anime information a
 ![Imgur](https://i.imgur.com/9qeSwwo.png)
 
 ## Installation
-1. Download and install the latest version of the browser extension [here](https://addons.mozilla.org/en-US/firefox/addon/ka-discord-rich-presence/) (only Firefox is supported at the moment).
+1. Download both the MSI file and XPI file from the releases page [here](https://github.com/AnjoEscuro/KissAnime-Discord-Rich-Presence/releases).
 
-2. Download and install the latest release of the WebSocket server [here](https://github.com/AnjoEscuro/KissAnime-Discord-Rich-Presence/releases).
+![Imgur](https://i.imgur.com/PKrldZa.png)
 
-3. Open Command Prompt (as an administrator) and type this. If you can't (or don't want to) meddle with Command Prompt, you can just restart your computer instead (easiest way is Command Prompt though)
+2. Install the MSI file, and install the XPI file to Firefox (read how to install the XPI file below).
+
+![Imgur](https://i.imgur.com/Z7HAIDv.png)
+
+3. After you install both files, type this in Command Prompt (run as administrator). If you can't (or don't want to) use Command Prompt, you can just restart your computer. However, we recommend this method as it's faster.
 
 ```batch
 net start KADRP
 ```
 
-4. Now you can go to KissAnime and do your thing :smile:
+## Installing the XPI file (only works in Firefox 4 and above)
+1. Open Firefox and press CTRL + Shift + A.
+
+2. Press the little gear icon in the right and select 'Install Add-on From File...'.
+
+![Imgur](https://i.imgur.com/FpM34GA.png)
+
+3. Browse to the XPI file you downloaded.

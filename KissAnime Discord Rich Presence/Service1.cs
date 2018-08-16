@@ -139,6 +139,11 @@ namespace KissAnime_Discord_Rich_Presence
                     eventLog.WriteEntry(exception.Message + "\n\n" + exception.StackTrace);
                 }
             }
+
+            protected override void OnOpen()
+            {
+                this.Send("{\"version\":" + Program.version + "}");
+            }
         }
     }
 }

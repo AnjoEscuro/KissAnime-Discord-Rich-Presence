@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ServiceProcess;
 
 namespace KissAnime_Discord_Rich_Presence
 {
     static class Program
     {
+        public const string version = "0.3.1";
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

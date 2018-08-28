@@ -328,3 +328,9 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+KADRP Installer/*.dll
+KADRP Installer/DiscordRPC.xml
+KADRP Installer/Newtonsoft.Json.xml
+KADRP Installer/KissAnime Discord Rich Presence.exe
+KADRP Installer/KissAnime Discord Rich Presence.exe.config

@@ -2,16 +2,10 @@
 using KissAnime_Discord_Rich_Presence.Models;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
 using WebSocketSharp;
 using WebSocketSharp.Server;
 
@@ -19,7 +13,6 @@ namespace KissAnime_Discord_Rich_Presence
 {
     public partial class Service1 : ServiceBase
     {
-        public string dataDirectory = Environment.GetEnvironmentVariable("LocalAppData") + "\\KADR";
         public static DiscordRpcClient discordRpcClient;
         public WebSocketServer webSocketServer;
         public static EventLog eventLog;
@@ -31,12 +24,11 @@ namespace KissAnime_Discord_Rich_Presence
         {
             InitializeComponent();
 
-            eventLog = new System.Diagnostics.EventLog();
+            eventLog = new EventLog();
 
-            if (!System.Diagnostics.EventLog.SourceExists("KADRP"))
+            if (!EventLog.SourceExists("KADRP"))
             {
-                System.Diagnostics.EventLog.CreateEventSource(
-                    "KADRP", "KissAnime Discord Rich Presence");
+                EventLog.CreateEventSource("KADRP", "KissAnime Discord Rich Presence");
             }
 
             eventLog.Source = "KADRP";
@@ -50,7 +42,7 @@ namespace KissAnime_Discord_Rich_Presence
             serviceStatus.dwWaitHint = 30000;
             SetServiceStatus(this.ServiceHandle, ref serviceStatus);
 
-            discordRpcClient = new DiscordRPC.DiscordRpcClient("476645625199460354", false, -1);
+            discordRpcClient = new DiscordRpcClient("476645625199460354", false, -1);
             discordRpcClient.Initialize();
 
             webSocketServer = new WebSocketServer(IPAddress.Parse("127.0.0.1"), 8080);
@@ -63,9 +55,12 @@ namespace KissAnime_Discord_Rich_Presence
 
         protected override void OnStop()
         {
-            ServiceStatus serviceStatus = new ServiceStatus();
-            serviceStatus.dwCurrentState = ServiceState.SERVICE_STOP_PENDING;
-            serviceStatus.dwWaitHint = 10000;
+            ServiceStatus serviceStatus = new ServiceStatus
+            {
+                dwCurrentState = ServiceState.SERVICE_STOP_PENDING,
+                dwWaitHint = 10000
+            };
+
             SetServiceStatus(this.ServiceHandle, ref serviceStatus);
 
             discordRpcClient.Dispose();
@@ -75,7 +70,7 @@ namespace KissAnime_Discord_Rich_Presence
             serviceStatus.dwCurrentState = ServiceState.SERVICE_STOPPED;
             SetServiceStatus(this.ServiceHandle, ref serviceStatus);
         }
-
+         
         public static void UpdatePresence(string details, string state)
         {
             discordRpcClient.SetPresence(new RichPresence()

@@ -20,10 +20,4 @@ The WebSocket server for the browser extension that gets the anime information a
 
 3. Now install the browser extension ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/ka-discord-rich-presence/)).
 
-4. Finally, execute these commands in cmd (as administrator), or as an alternative, restart your computer.
-
-![Imgur](https://imgur.com/download/Y6iq1RI)
-
-```batch
-net start KADRP
-```
+4. Now you can go to KissAnime and do your thing

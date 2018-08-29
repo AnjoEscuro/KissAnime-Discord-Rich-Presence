@@ -10,7 +10,7 @@ The WebSocket server for the browser extension that gets the anime information a
 ![Imgur](https://i.imgur.com/9qeSwwo.png)
 
 ## Installation
-1. Download the dependency service from the releases page.
+1. Download the latest version of the dependency service from the [releases page](https://github.com/AnjoEscuro/KissAnime-Discord-Rich-Presence/releases).
 
 ![Imgur](https://imgur.com/download/Y6qMeSy)
 

@@ -12,13 +12,17 @@ The WebSocket server for the browser extension that gets the anime information a
 ## Installation
 1. Download the dependency service from the releases page.
 
-![Imgur](https://i.imgur.com/PKrldZa.png)
+![Imgur](https://imgur.com/download/Y6qMeSy)
 
 2. Install the dependency service.
 
-3. Now install the browser extension ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/ka-discord-rich-presence/), Chrome link coming soon).
+![Imgur](https://imgur.com/download/ZnvpZiv)
+
+3. Now install the browser extension ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/ka-discord-rich-presence/)).
 
 4. Finally, execute these commands in cmd (as administrator), or as an alternative, restart your computer.
+
+![Imgur](https://imgur.com/download/Y6iq1RI)
 
 ```batch
 net start KADRP

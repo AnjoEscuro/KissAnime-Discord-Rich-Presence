@@ -21,3 +21,26 @@ The WebSocket server for the browser extension that gets the anime information a
 3. Now install the browser extension ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/ka-discord-rich-presence/)).
 
 4. Now you can go to KissAnime and do your thing.
+
+## For Chrome
+
+1. Install the dependency service (steps are above).
+2. Download the chrome.zip file from the [releases page](https://github.com/AnjoEscuro/KissAnime-Discord-Rich-Presence/releases).
+3. Extract it to a separate folder.
+4. Go to chrome://extensions and enable Developers Mode.
+
+![Imgur](https://imgur.com/download/5OL0fJd)
+
+![Imgur](https://imgur.com/download/xqU5fwf)
+
+5. Click 'Load unpacked' and browse to the folder where you extracted the files.
+
+![Imgur](https://imgur.com/download/4wCMcKa)
+
+***
+
+NOTE: A really annoying message should pop up every time you open Chrome. It looks like the image below. Just IGNORE it.
+
+![Imgur](https://imgur.com/download/hLxg82s)
+
+If you don't like annoying messages, just delete Chrome and install the developer edition of Chrome instead. Link [here](https://www.google.com/chrome/dev/).

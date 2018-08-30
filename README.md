@@ -10,25 +10,37 @@ The WebSocket server for the browser extension that gets the anime information a
 ![Imgur](https://i.imgur.com/9qeSwwo.png)
 
 ## Installation
-1. Download both the MSI file and XPI file from the releases page [here](https://github.com/AnjoEscuro/KissAnime-Discord-Rich-Presence/releases).
+1. Download the latest version of the dependency service from the [releases page](https://github.com/AnjoEscuro/KissAnime-Discord-Rich-Presence/releases).
 
-![Imgur](https://i.imgur.com/PKrldZa.png)
+![Imgur](https://imgur.com/download/Y6qMeSy)
 
-2. Install the MSI file, and install the XPI file to Firefox (read how to install the XPI file below).
+2. Install the dependency service.
 
-![Imgur](https://i.imgur.com/Z7HAIDv.png)
+![Imgur](https://imgur.com/download/ZnvpZiv)
 
-3. After you install both files, type this in Command Prompt (run as administrator). If you can't (or don't want to) use Command Prompt, you can just restart your computer. However, we recommend this method as it's faster.
+3. Now install the browser extension ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/ka-discord-rich-presence/)).
 
-```batch
-net start KADRP
-```
+4. Now you can go to KissAnime and do your thing.
 
-## Installing the XPI file (only works in Firefox 4 and above)
-1. Open Firefox and press CTRL + Shift + A.
+## For Chrome
 
-2. Press the little gear icon in the right and select 'Install Add-on From File...'.
+1. Install the dependency service (steps are above).
+2. Download the chrome.zip file from the [releases page](https://github.com/AnjoEscuro/KissAnime-Discord-Rich-Presence/releases).
+3. Extract it to a separate folder.
+4. Go to chrome://extensions and enable Developers Mode.
 
-![Imgur](https://i.imgur.com/FpM34GA.png)
+![Imgur](https://imgur.com/download/5OL0fJd)
 
-3. Browse to the XPI file you downloaded.
+![Imgur](https://imgur.com/download/xqU5fwf)
+
+5. Click 'Load unpacked' and browse to the folder where you extracted the files.
+
+![Imgur](https://imgur.com/download/4wCMcKa)
+
+***
+
+NOTE: A really annoying message should pop up every time you open Chrome. It looks like the image below. Just IGNORE it.
+
+![Imgur](https://imgur.com/download/hLxg82s)
+
+If you don't like annoying messages, just delete Chrome and install the developer edition of Chrome instead. Link [here](https://www.google.com/chrome/dev/).

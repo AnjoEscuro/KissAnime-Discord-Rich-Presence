@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "KA Discord Rich Presence",
+    "version": "0.3.1",
+    "description": "Displays info about the current anime you're watching on Discord Rich Presence!",
+    "icons": {
+        "48": "icons/ka-48.png",
+        "96": "icons/ka-96.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "*://*.kissanime.ru/Anime/*/*" ],
+            "js": [ "anime.js" ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": {
+            "19": "icons/ka-19.png",
+            "38": "icons/ka-38.png",
+            "16": "icons/ka-16.png",
+            "32": "icons/ka-32.png"
+        },
+        "default_title": "KissAnime Discord Rich Presence"
+    },
+    "background": {
+        "scripts": [ "main.js" ]
+    }
+}

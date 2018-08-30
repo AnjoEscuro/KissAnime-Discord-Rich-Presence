@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-    <Product Id="*" Name="KissAnime Discord Rich Presence" Language="1033" Version="0.3.1.0" Manufacturer="The Otaku Realm" UpgradeCode="36ef97ca-32d5-40b3-a0ef-992c94d8e026">
+    <Product Id="*" Name="KissAnime Discord Rich Presence" Language="1033" Version="0.3.2.0" Manufacturer="The Otaku Realm" UpgradeCode="36ef97ca-32d5-40b3-a0ef-992c94d8e026">
         <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
         <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
@@ -34,26 +34,6 @@
                 <ServiceInstall Id="ServiceInstaller" Type="ownProcess" Name="KADRP" DisplayName="KissAnime Discord Rich Presence" Description="The WebSocket server that gets information from the browser extension and relays it to Discord Rich Presence." Start="auto" ErrorControl="normal" />
                 <ServiceControl Id="ServiceUninstaller" Name="KADRP" Start="install" Remove="both" Stop="both"></ServiceControl>
             </Component>
-            <!--<Component Id="DiscordRPC_dll">
-                <File Source="DiscordRPC.dll" />
-                <RemoveFile Id="DiscordRPC_dll" Name="DiscordRPC.dll" On="both" />
-            </Component>
-            <Component Id="DiscordRPC_xml">
-                <File Source="DiscordRPC.xml" />
-                <RemoveFile Id="DiscordRPC_xml" Name="DiscordRPC.xml" On="both" />
-            </Component>
-            <Component Id="Newtonsoft_Json_dll">
-                <File Source="Newtonsoft.Json.dll" />
-                <RemoveFile Id="Newtonsoft_Json_dll" Name="Newtonsoft.Json.dll" On="both" />
-            </Component>
-            <Component Id="Newtonsoft_Json_xml">
-                <File Source="Newtonsoft.Json.xml" />
-                <RemoveFile Id="Newtonsoft_Json_xml" Name="Newtonsoft.Json.xml" On="both" />
-            </Component>
-            <Component Id="websocket-sharp_dll">
-                <File Source="websocket-sharp.dll" />
-                <RemoveFile Id="websocket-sharp_dll" Name="websocket-sharp.dll" On="both" />
-            </Component>-->
         </ComponentGroup>
     </Fragment>
 </Wix>
